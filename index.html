@@ -1,16 +1,27 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Debrief</title>
     <link rel="stylesheet" type="text/css" href="debrief.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="debrief.js"></script>
-    <script src="https://use.fontawesome.com/da588537ad.js"></script>
 </head>
 
 <body>
+
+<div id="mySidenav" class="sidenav">
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ <li><a href="#aboutUs">About Us</a></li>
+ <li><a href="#playlists">Playlists</a></li>
+ <li><a href="#videos">Videos</a></li>
+ <li><a href="#contact">Contact</a></li>
+</div>
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  <span style="font-size:30px;cursor:pointer;color:white;position:fixed;top:50px;padding-left:20px;" onclick="openNav()">&#9776; Menu</span>
+
   <div class="fullscreen-bg">
       <video loop muted autoplay poster="no_one_knows.mp4" id="video-background">
           <source src="no_one_knows.mp4" type="video/webm">
@@ -19,68 +30,98 @@
             <p>Your browser does not support video playback in HTML5. You need to upgrade Bro.
       </video>
   </div>
+<div class="straplineBox">
+      <img src="images/debrief_logo.png" alt="Debrief Band Logo" id="mainLogo"/>
 
+    <h1 class="contentHeader1"id="strapline">A local covers band in Gloucestershire.</h1>
+    <div class="anchorButton"><a href="#aboutUs">About Us</a></div></div>
 
-<span class="fa fa-bars fa-2x" aria-hidden="true" onclick="openNav()">&nbsp;Menu</span>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn fa fa-window-close" onclick="closeNav()"></a>
-  <a href="#aboutUs">About Us</a>
-  <a href="#playlists">Playlists</a>
-  <a href="#">Videos</a>
-  <a href="#">Contact</a>
-  </div>
-
-<div class="main">
-    <img src="images/Band Logo/Debrief_Logo_Web_Main.png" alt="Debrief Band Logo" id="mainLogo"/>
+    <div class="mainContent">
+      <div class="contentPane">
+    <h1 class="contentHeader1" style="padding-top=50px;" id="aboutUs" padding-top="50px">About Us</h1>
+    <div class="aboutUs">
+    <p> Debrief is a covers band that live and operate in the Gloucestershire area and slightly beyond if the price is right.</p>
+    <p>We play a solid variety of music across the decades but with a particular focus on rock, both modern and classic. We also play some pop songs just to throw in the occasional crowd pleaser. You can find more about our typical setlist in the <em>Playlist</em> section below</p>
+    <p>We don't take ourselves too seriously, which is just as well if you've ever heard us, but we always try and make every gig a special occasion. So if you are looking to liven up your party, get drunk people up on the dancefloor, or you're just looking for a band to liven up your pub or bar, then look no further! Or do, we won't mind.</p>
+    <p> Currently in the band (they're all expendable) are:</p>
+    <div id="bandBio">
+    <ul><h2 class="contentHeader2"> Frank - Vocals and Guitar</h2></ul>
+    <ul><h2 class="contentHeader2"> John - Lead Guitar and Hair</h2></ul>
+    <ul><h2 class="contentHeader2"> Adam - Bass Guitar</h2></ul>
+    <ul><h2 class="contentHeader2"> Alex - Hits things</h2></ul>
     </div>
 
-  <h2 id="strapline">A local covers band in Gloucestershire.</h2>
+    <h1 class="contentHeader1">Our Origin Story</h1>
+    <p> Frank had purchased a small furry creature from a Signapore market stall where the old man advised him not to feed it after midnight. This was problematic for two reasons. 1) Frank doesn't listen and 2) Frank doesn't follow instructions. Well before you know it the small furry creature morphed into John</p>
+    <p>After swearing for a significant length of time (which apparently is completely normal for him), John picked up a guitar nearby and started widdling out an epic solo.</p>
+    <p>Sensing an opportunity, Frank also picked up another guitar and started to join in until John told him to pack it in. He spend the rest of the afternoon wailing into a microphone and the seeds of a moderately good local covers band was born.</p>
+    <p>Over time, Frank perfected the guitar but something was missing from this due. Both were too energetic and excitable. They needed a counterweight to their over-exuberent performance.</p>
+    <p>Step forward Adam. A bassist of no great distinction, he provided a solid lumbering anchor which helped weigh down the dynamic duo, transforming their performances at local open mic nights from "intense" to "alright".</p>
+    <p>We don't actually know where Alex came from. He appeared one evening mid-way through a practice and it felt impolite to ask. A drummer of great distinction, he provided the comptence the band sorely needed.</p>
+    <p>Legend has it that if you say his name in the mirror three times at Midnight then he appears in the room and smashes out a 20 minute drum solo before killing you.</p>
+    </div>
+    </div>
+      <div class="anchorButton1"><a href="#playlists">Playlists</a></div>
+    </div>
+    <img src="images/background_image_2.jpg" class="imageBreak">
+    <div class="playlist" id="playlists">
+         <div class="contentPane">
+     <div class="aboutUs">
 
+    <h1 class="contentHeader1" >Playlist/Songbook</h1>
+    <p>We enjoy playing a large range of rock and pop music spanning the decades. While we love playing well known rock anthems from a wide variety of bands, we also enjoy playing slightly obscure personal favourites to make ourselves stand out a bit from the rest of the crowd.</p>
 
-<div class="mainContent">
-<h1 style="padding-top=50px;" id="aboutUs" padding-top="50px">About Us</h1>
-<div class="aboutUs">
-<p> We are a bunch of hardy rock stars that live and operate in the Gloucestershire area and slightly beyond if the price is right</p>
-<p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque, augue et eleifend iaculis, augue dui bibendum massa, id rhoncus massa nisl eu enim. Curabitur imperdiet nec lectus sed condimentum. Pellentesque ac sapien sed est commodo tincidunt in id ex. Maecenas ac urna in lacus luctus sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed quam felis, sollicitudin et arcu et, mollis efficitur orci. Maecenas elit mi, tempor eu tortor in, rutrum cursus ipsum. In at purus ante. Aenean sapien lacus, cursus id aliquet sollicitudin, laoreet eu orci. Maecenas nec vulputate arcu.</p>
+    <p>Check out our songbook and playlist set from Spotify below to see what we can currently play. It's a list that'll grow over time and we're more than happy to add to it with suggestions from yourselves if you'd like us to play at your party or venue. </p>
 
-<p>Pellentesque viverra massa mollis, tincidunt libero sed, fermentum mi. Pellentesque porta aliquet ultricies. Donec facilisis vel metus eu lobortis. Proin facilisis egestas justo ut eleifend. Proin feugiat vitae nisl nec tempus. Cras porttitor vulputate semper. Pellentesque vitae posuere eros. Suspendisse rutrum lorem tellus, ornare facilisis velit euismod sed. Cras fringilla diam egestas elit mollis, sit amet ullamcorper purus tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc ac tortor massa.</p>
+    <h2 class="contentHeader2"> Our Full Songbook</h2>
 
-<p>Donec a condimentum magna, id placerat enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec enim leo, mattis vel elementum non, gravida vitae urna. Nullam feugiat elementum tincidunt. Nulla pharetra quis nisi in finibus. Duis sagittis nisi sollicitudin justo tincidunt, at imperdiet nunc blandit. Sed ullamcorper consequat mi in cursus.</p>
+    <iframe src="https://open.spotify.com/embed/user/sweeters/playlist/0RiAuBTNBOiu7GjvaJdfbi" width="600" height="680" frameborder="0" allowtransparency="true" class="spotifyPlaylist"></iframe>
 
-<p>In blandit augue ut nisl dignissim, non tincidunt erat vestibulum. Mauris id placerat dolor, in molestie lectus. Ut fringilla metus ut metus lobortis, in maximus dui placerat. Nunc pellentesque lorem sed nulla vestibulum, non ultrices turpis tristique. Etiam sodales rutrum faucibus. In aliquet mollis nisl nec blandit. Aenean in ipsum hendrerit nulla volutpat auctor.</p>
-</div>
-<img src="Images/background_image_1.jpg">
-<div id="playlists">
-<div class="playlist">
-  <div class="aboutUs">
-<h1 style="padding-top=50px;" id="aboutUs" padding-top="50px">Playlist/Songbook</h1>
-<p>We enjoy playing a large range of rock and pop music spanning the decades. While we love playing well known rock anthems from a wide variety of bands, we also enjoy playing slightly obscure personal favourites.
+    <h2>An example of a set list for a wedding party</h2>
+    <iframe class="spotify" src="https://open.spotify.com/embed/user/sweeters/playlist/275kxLigeztIdIZz5EUnoV" align-content="center" width="600" height="680" frameborder="0" allowtransparency="true" padding-right="5%"></iframe>
+    </div>
+    </div>
+        <div class="anchorButton1"><a href="#playlists">Our Videos</a></div>
+    </div>
 
-<p>Check out our songbook and playlist set from Spotify below to see what we can currently play. It's a list that'll grow over time and we're more than happy to add to it with suggestions from yourselves if you'd like us to play at your party or venue. </p>
+    <img src="images/background_image_2.jpg" class="imageBreak">
+    <div class="playlist" id="videos">
+         <div class="contentPane">
+     <div class="aboutUs">
 
-<h2> Our Full Songbook</h2>
-<div class="media">
-<iframe src="https://open.spotify.com/embed/user/sweeters/playlist/0RiAuBTNBOiu7GjvaJdfbi" width="600" height="680" frameborder="0" align-content="center" allowtransparency="true" class="spotifyPlaylist"></iframe>
-<h2>An example of a set list for a wedding party</h2>
-<iframe src="https://open.spotify.com/embed/user/sweeters/playlist/275kxLigeztIdIZz5EUnoV" align-content="flex-end" width="600" height="680" frameborder="0" allowtransparency="true" padding-right="5%"></iframe>
-</div>
+    <h1 class="contentHeader1">Our Videos</h1>
+    <h2 class="contentHeader2">No One Knows - Live at the Guidhall, Gloucester</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Z16czGPCo3k" frameborder="0" allowfullscreen></iframe>
+    <h2 class="contentHeader2">Hard to Handle - Live at the Guidhall, Gloucester.</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/631awBZmdow" frameborder="0" allowfullscreen></iframe>
+    </div>
+    </div>
+    <div class="anchorButton1"><a href="#playlists">Contact Us</a></div>
+    </div>
 
-<p></p>
+    <img src="images/background_image_2.jpg" class="imageBreak">
+    <div class="playlist" id="contact">
+         <div class="contentPane">
+     <div class="aboutUs">
 
+    <h1 class="contentHeader1" >Contact Us</h1>
+    <p>Like what you've seen or heard? If you've got an event coming up that you think we'd be perfect to play at, we'd love to hear from you. We are open to a wide range of offers, from providing a noise in a pub, all the way through to wedding parties and charity events. Please just enquire below and we'll get back to you as soon as possible.</p>
 
-
-      <p>No One Knows - Live at the Guidhall, Gloucester</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Z16czGPCo3k" frameborder="0" allowfullscreen></iframe>
-      <p>Hard to Handle - Live at the Guidhall, Gloucester.</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/631awBZmdow" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf6eVOzkHQ-kLS8S3iA_2jiWvVl_0vp6BNEKOGBrf2Qi5s3aw/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
     </div>
+    </div>
+        <div class="anchorButton1"><a href="#playlists">Contact Us</a></div>
+    </div>
+
+
+
+
+
+
   </div>
 
-</div>
-  </div>
 </div>
 </body>
-
 <script src="debrief.js"></script>
 </html>
