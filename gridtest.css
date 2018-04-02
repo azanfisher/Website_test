@@ -1,0 +1,385 @@
+html {
+  height: 100%
+}
+
+body {
+    display: block;
+    margin: auto;
+}
+
+a {
+  color:inherit;
+}
+
+/*START OF STYLING FOR VIDEO AND LOGO OPENING SECTION */
+
+#video-background {
+  position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+}
+
+#mainLogo {
+  width: 80%;
+  display: block;
+  padding-left: 9.5%;
+  transform: translate(-0%, -0%);
+  padding-top: 2%;
+  animation: fadeIn 10s;
+  animation-timing-function: ease-in;
+  position: relative;
+  z-index:-1;
+}
+
+#strapline {
+    color: #ffffff;
+    animation: fadeIn 10s;
+    animation-timing-function: ease-in;
+    z-index:-1;
+    text-align: center;
+    font-family: 'Open Sans', monospace;
+    font-size: 3vw;
+  }
+
+#abouUsButton {
+    color:#ffffff;
+    border-width: 2px;
+    border-style: solid;
+    font-family: 'Open Sans', monospace;
+    text-align:center;
+    display: block;
+    font-size:2em;
+    transition-duration: 0.4s;
+    cursor:pointer;
+    border-radius:5px;
+    padding: 15px;
+    margin-top: 2%;
+    margin-bottom: 80%;
+    width:15%;
+    position: relative;
+    z-index:1;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fadeIn 10s;
+    animation-timing-function: ease-in;
+  }
+
+
+/*Keyframes animation that I originally wrote*/
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1;}
+}
+/*END OF STYLING FOR VIDEO AND LOGO OPENING SECTION */
+
+
+
+#contentWrapper { /*THIS IS WHAT CREATES THE DUAL PAGE LAYOUT FOR CONTENT AND MENU*/
+    width: auto;
+    overflow: visible; /* add this to contain floated children */
+        font-family: 'Open Sans', monospace;
+}
+
+/* STYLE FOR CONTENT LEFT - MENU RIGHT */
+#contentLeft {
+  height: 974px;
+    width: 60%;
+    float:left; /* add this */
+    overflow: scroll;
+    color: white;
+    background-color: #1b1e27;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    direction:rtl;
+}
+
+#contentLeft p, h2 {
+  color: white;
+  background-color: #1b1e27;
+  padding-left: 2%;
+  padding-right:5%;
+  direction: ltr;
+}
+
+#contentLeft ul h2 {
+  color: white;
+  background-color: #1b1e27;
+  padding-left: 1%;
+  direction: ltr;
+
+}
+
+/*Added in to defeat user agent stylesheet.*/
+#contentLeft h1 {
+  direction:ltr;
+  margin-top:2%;
+  padding-left: 2%;
+  text-align: center;
+}
+
+#menuRight {
+  width:40%;
+  height: 974px;
+    float: left; /* add this */
+    background-image:url("images/image1.jpg");
+
+    background-attachment: fixed;
+    transition: .5s ease;
+    background-size: cover;
+    background-position-x: 450px;
+    background-position-y: bottom;
+    line-height:30px;
+
+}
+
+/* STYLE FOR CONTENT RIGHT - MENU LEFT */
+
+#contentRight {
+  height: 974px;
+    width: 60%;
+    float:right; /* add this */
+    overflow: scroll;
+    color: white;
+    background-color: #1b1e27;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    direction:ltr;
+}
+
+#contentRight p, h2 {
+  color: white;
+  background-color: #1b1e27;
+  padding-left: 2%;
+  padding-right:5%;
+  direction: ltr;
+}
+
+#contentRight ul h2 {
+  color: white;
+  background-color: #1b1e27;
+  padding-left: 1%;
+  direction: ltr;
+  text-align: center;
+
+}
+
+/*Added in to defeat user agent stylesheet.*/
+#contentRight h1 {
+  direction:ltr;
+  margin-top:2%;
+  padding-left: 2%;
+  text-align: center;
+}
+
+#menuLeft {
+  width:40%;
+  height: 974px;
+    float: left; /* add this */
+    background-image:url("images/image1.jpg");
+
+    background-attachment: fixed;
+    transition: .5s ease;
+    background-size: cover;
+    background-position-y: bottom;
+    line-height:30px;
+}
+
+/*OTHER STUFF */
+
+#navlinkleft{
+  margin-top: 35%;
+}
+
+.anchorButtonLeft {
+  color:#ffffff;
+  border-width: 2px;
+  border-style: solid;
+  font-family: 'Open Sans', monospace;
+  text-align:center;
+  display: block;
+  font-size:2em;
+  transition-duration: 0.4s;
+  cursor:pointer;
+  border-radius:5px;
+  padding: 15px;
+  margin-top: 5%;
+  width:50%;
+  position: relative;
+  z-index:10;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.4;
+  transition: .5s ease;
+  filter:blur(5px);
+}
+
+.imageLeftFirst:hover .anchorButtonLeft {
+  opacity: 1;
+  transition: .5s ease;
+  z-index: 10;
+  filter:none;
+
+}
+
+.imageLeft:hover .anchorButtonLeft {
+  opacity: 1;
+  transition: .5s ease;
+  z-index: 10;
+  filter:none;
+
+}
+
+.anchorButtonLeft:hover {
+background-color: #1e1c11;
+color: grey;
+}
+
+.anchorButtonContentLeft a {
+  color:#ffffff;
+  border-style: solid;
+  font-family: 'Open Sans', monospace;
+  text-align:center;
+  display: block;
+  font-size:2em;
+  transition-duration: 0.4s;
+  cursor:pointer;
+  border-radius:5px;
+  padding: 15px;
+  width:15%;
+  z-index:5;
+  margin-bottom: 2%;
+  margin-right: 40%;
+}
+
+.anchorButtonContentRight a {
+  color:#ffffff;
+  border-style: solid;
+  font-family: 'Open Sans', monospace;
+  text-align:center;
+  display: block;
+  font-size:2em;
+  transition-duration: 0.4s;
+  cursor:pointer;
+  border-radius:5px;
+  padding: 25px;
+  width:45%;
+  z-index:5;
+  margin-bottom: 2%;
+  margin-left: 25%;
+}
+
+.imageBreak {
+  max-width:100%;
+  height:auto;
+  z-index: 2;
+  display:block;
+}
+
+.spotifyPlaylist {
+  margin-left: 20%;
+  overflow: visible;
+}
+
+.youtubeVideo {
+  padding-right: 30%;
+}
+
+/*START OF image Gallery Content from W3 Schools*/
+
+div.gallery {
+    border: 1px solid #ccc;
+    margin-left: 30%;
+    margin-top: 10px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom:2%;
+}
+
+/*END OF image Gallery Content from W3 Schools*/
+
+/*START OF SOCIAL MEDIA ICONS FOR MENU*/
+.socialMedia {
+  border: 1px solid #ccc;
+  margin-left:20px;
+  margin-top: 8%;
+
+}
+
+
+.imageLeftFirst:hover .socialMediaBreak {
+  transition: .5s ease;
+  color: white;
+  text-shadow: 0 0 0.2em #FFF;
+
+  }
+
+
+  .socialMediaBreak {
+    font-size: 50px;
+    color: darkgray;
+    margin-top: 4%;
+    margin-left: 30px;
+  }
+
+.contactUsForm {
+  height: 130%;
+  width: 90%;
+  margin-left:5%;
+  margin-right:5%;
+}
+
+/*END OF SOCIAL MEDIA ICONS FOR MENU*/
+
+#footer {
+  max-width:100%;
+  height:auto;
+  z-index: 2;
+  display:block;
+  background-color: black;
+  font-family: 'Open Sans', monospace;
+  color: white;
+  padding-bottom: 2%;
+
+}

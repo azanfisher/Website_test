@@ -4,124 +4,208 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Debrief</title>
-    <link rel="stylesheet" type="text/css" href="debrief.css">
+    <link rel="stylesheet" type="text/css" href="gridtest.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
 
-<div id="mySidenav" class="sidenav">
- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
- <li><a href="#aboutUs">About Us</a></li>
- <li><a href="#playlists">Playlists</a></li>
- <li><a href="#videos">Videos</a></li>
- <li><a href="#contact">Contact</a></li>
-</div>
-<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-<div id="main">
-  <span style="font-size:30px;cursor:pointer;color:white;position:fixed;top:50px;padding-left:20px;" onclick="openNav()">&#9776; Menu</span>
-
-  <div class="fullscreen-bg">
+  <!--- START OF VIDEO OPENING CONTENT -->
+<div>
       <video loop muted autoplay poster="no_one_knows.mp4" id="video-background">
           <source src="no_one_knows.mp4" type="video/webm">
           <source src="no_one_knows.mp4" type="video/mp4">
           <source src="no_one_knows.mp4" type="video/ogg">
-            <p>Your browser does not support video playback in HTML5. You need to upgrade Bro.
-      </video>
-  </div>
+            <p>You
+            </div>
+
+  <!-- END OF VIDEO OPENING SECTION -->
+
+  <!-- BAND LOGO AND STRAPLINE -->
+
 <div class="straplineBox">
-      <img src="images/debrief_logo.png" alt="Debrief Band Logo" id="mainLogo"/>
-
+      <img src="images/debrief_main_logo_web.png" alt="Debrief Band Logo" id="mainLogo"/>
     <h1 class="contentHeader1"id="strapline">A local covers band in Gloucestershire.</h1>
-    <div class="anchorButton"><a href="#aboutUs">About Us</a></div></div>
+    <div id="abouUsButton"><a href="#aboutUs">About Us</a></div>
+  </div>
+  <!-- END OF BAND LOGO AND STRAPLINE -->
 
-    <div class="mainContent">
-      <div class="contentPane">
-    <h1 class="contentHeader1" style="padding-top=50px;" id="aboutUs" padding-top="50px">About Us</h1>
-    <div class="aboutUs">
-    <p> Debrief is a covers band that live and operate in the Gloucestershire area and slightly beyond if the price is right.</p>
-    <p>We play a solid variety of music across the decades but with a particular focus on rock, both modern and classic. We also play some pop songs just to throw in the occasional crowd pleaser. You can find more about our typical setlist in the <em>Playlist</em> section below</p>
-    <p>We don't take ourselves too seriously, which is just as well if you've ever heard us, but we always try and make every gig a special occasion. So if you are looking to liven up your party, get drunk people up on the dancefloor, or you're just looking for a band to liven up your pub or bar, then look no further! Or do, we won't mind.</p>
-    <p> Currently in the band (they're all expendable) are:</p>
-    <div id="bandBio">
-    <ul><h2 class="contentHeader2"> Frank - Vocals and Guitar</h2></ul>
-    <ul><h2 class="contentHeader2"> John - Lead Guitar and Hair</h2></ul>
-    <ul><h2 class="contentHeader2"> Adam - Bass Guitar</h2></ul>
-    <ul><h2 class="contentHeader2"> Alex - Hits things</h2></ul>
+<!---START OF ABOUT US SECTION --->
+
+<div id="contentWrapper">
+    <div id="contentLeft">
+         <h1 class="contentHeader1" id="aboutUs">About Us</h1>
+         <p> Debrief is a covers band that live and operate in the Gloucestershire area and slightly beyond if the price is right.</p>
+         <p>We play a solid variety of music across the decades but with a particular focus on rock, both modern and classic. We also play some pop songs just to throw in the occasional crowd pleaser. You can find more about our typical setlist in the <em>Playlist</em> section below</p>
+         <p>We don't take ourselves too seriously, which is just as well if you've ever heard us, but we always try and make every gig a special occasion. So if you are looking to liven up your party, get drunk people up on the dancefloor, or you're just looking for a band to liven up your pub or bar, then look no further! Or do, we won't mind.</p>
+         <p> Currently in the band (they're all expendable) are:</p>
+         <div id="bandBio">
+         <ul><h2> Frank - Vocals and Guitar</h2></ul>
+         <ul><h2> Adam - Bass Guitar</h2></ul>
+         <ul><h2> Alex - Hits things</h2></ul>
+         <ul><h2> TBA - Lead Guitarist</h2></ul>
+         <ul><h2> Michael - Sound and Vision</h2></ul>
+         </div>
+         <h1 class="contentHeader1">Our Origin Story</h1>
+         <p> One day, Frank decided he was destined for greater things and decided to become a rock god. 20 years later he's still having a good crack at it, honing his vocal and guitar playing skills and allowing his energetic swagger to dominate the stage and imaginary crowds before him.</p>
+         <p>But something was missing... he needed a counterweight to his over-exuberent performance. Step forward Adam. A bassist of no great distinction, he provided a solid lumbering anchor which helped weigh down Frank's dynamics and helped to transform performances at local open mic nights from "intense" to "alright".</p>
+         <p>We don't actually know where Alex came from. He appeared one evening mid-way through a practice and it felt impolite to ask. A drummer of great distinction, he provided the comptence the band sorely needed.</p>
+         <p>Legend has it that if you say his name in the mirror three times at Midnight then he appears in the room and smashes out a 20 minute drum solo before killing you.</p>
+         <p>Michael was passing by Frank's house one night during practice and his innate desire to bring order to chaos overwhelmed him so greatly that he leapt through the door and finessed the mixing desk to provide an aural sensation beyond the grasp of most mortals. He is also a dab hand on the lighting desk and has caused no less than five seizures so far.
+
+        <div class="anchorButtonContentLeft"><a href="#playlists">Our Videos</a></div>
     </div>
 
-    <h1 class="contentHeader1">Our Origin Story</h1>
-    <p> Frank had purchased a small furry creature from a Signapore market stall where the old man advised him not to feed it after midnight. This was problematic for two reasons. 1) Frank doesn't listen and 2) Frank doesn't follow instructions. Well before you know it the small furry creature morphed into John</p>
-    <p>After swearing for a significant length of time (which apparently is completely normal for him), John picked up a guitar nearby and started widdling out an epic solo.</p>
-    <p>Sensing an opportunity, Frank also picked up another guitar and started to join in until John told him to pack it in. He spend the rest of the afternoon wailing into a microphone and the seeds of a moderately good local covers band was born.</p>
-    <p>Over time, Frank perfected the guitar but something was missing from this due. Both were too energetic and excitable. They needed a counterweight to their over-exuberent performance.</p>
-    <p>Step forward Adam. A bassist of no great distinction, he provided a solid lumbering anchor which helped weigh down the dynamic duo, transforming their performances at local open mic nights from "intense" to "alright".</p>
-    <p>We don't actually know where Alex came from. He appeared one evening mid-way through a practice and it felt impolite to ask. A drummer of great distinction, he provided the comptence the band sorely needed.</p>
-    <p>Legend has it that if you say his name in the mirror three times at Midnight then he appears in the room and smashes out a 20 minute drum solo before killing you.</p>
-    </div>
-    </div>
-      <div class="anchorButton1"><a href="#playlists">Playlists</a></div>
-    </div>
-    <img src="images/background_image_2.jpg" class="imageBreak">
-    <div class="playlist" id="playlists">
-         <div class="contentPane">
-     <div class="aboutUs">
-
-    <h1 class="contentHeader1" >Playlist/Songbook</h1>
-    <p>We enjoy playing a large range of rock and pop music spanning the decades. While we love playing well known rock anthems from a wide variety of bands, we also enjoy playing slightly obscure personal favourites to make ourselves stand out a bit from the rest of the crowd.</p>
-
-    <p>Check out our songbook and playlist set from Spotify below to see what we can currently play. It's a list that'll grow over time and we're more than happy to add to it with suggestions from yourselves if you'd like us to play at your party or venue. </p>
-
-    <h2 class="contentHeader2"> Our Full Songbook</h2>
-
-    <iframe src="https://open.spotify.com/embed/user/sweeters/playlist/0RiAuBTNBOiu7GjvaJdfbi" width="600" height="680" frameborder="0" allowtransparency="true" class="spotifyPlaylist"></iframe>
-
-    <h2>An example of a set list for a wedding party</h2>
-    <iframe class="spotify" src="https://open.spotify.com/embed/user/sweeters/playlist/275kxLigeztIdIZz5EUnoV" align-content="center" width="600" height="680" frameborder="0" allowtransparency="true" padding-right="5%"></iframe>
-    </div>
-    </div>
-        <div class="anchorButton1"><a href="#playlists">Our Videos</a></div>
-    </div>
-
-    <img src="images/background_image_2.jpg" class="imageBreak">
-    <div class="playlist" id="videos">
-         <div class="contentPane">
-     <div class="aboutUs">
-
-    <h1 class="contentHeader1">Our Videos</h1>
-    <h2 class="contentHeader2">No One Knows - Live at the Guidhall, Gloucester</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Z16czGPCo3k" frameborder="0" allowfullscreen></iframe>
-    <h2 class="contentHeader2">Hard to Handle - Live at the Guidhall, Gloucester.</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/631awBZmdow" frameborder="0" allowfullscreen></iframe>
-    </div>
-    </div>
-    <div class="anchorButton1"><a href="#playlists">Contact Us</a></div>
-    </div>
-
-    <img src="images/background_image_2.jpg" class="imageBreak">
-    <div class="playlist" id="contact">
-         <div class="contentPane">
-     <div class="aboutUs">
-
-    <h1 class="contentHeader1" >Contact Us</h1>
-    <p>Like what you've seen or heard? If you've got an event coming up that you think we'd be perfect to play at, we'd love to hear from you. We are open to a wide range of offers, from providing a noise in a pub, all the way through to wedding parties and charity events. Please just enquire below and we'll get back to you as soon as possible.</p>
-
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf6eVOzkHQ-kLS8S3iA_2jiWvVl_0vp6BNEKOGBrf2Qi5s3aw/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<div class="imageLeftFirst">
+    <div id="menuRight"><div id="navlinkleft">
+      <a href="#aboutUs" class="anchorButtonLeft" margin-top="20%"> About Us </a><br>
+      <a href="#playlists" class="anchorButtonLeft"> Playlists </a><br>
+      <a href="#media" class="anchorButtonLeft"> Media </a><br>
+      <a href="#contactUs" class="anchorButtonLeft"> Contact </a></br>
+      <a href="https://www.facebook.com/pg/Debrief-1498334906920330/events/?ref=page_internal" class="anchorButtonLeft"> Upcoming Shows </a>
 
     </div>
+    <div class="socialMediaBreak">  <a href="https://www.facebook.com/Debrief-1498334906920330/"> <i class="fab fa-facebook"></i></a> <a href="https://twitter.com/DebriefBand"> <i class="fab fa-twitter-square"></i></a></div>
     </div>
-        <div class="anchorButton1"><a href="#playlists">Contact Us</a></div>
-    </div>
-
-
-
-
 
 
   </div>
 
 </div>
+
+<!--END OF ABOUT US SECTION --->
+
+<!--1st Image break between content --->
+    <img src="images/image4.jpg" class="imageBreak">
+<!--2nd Image break between content --->
+
+<!-- START OF PLAYLIST SECTION --->
+<div id="contentWrapper">
+    <div id="contentRight">
+             <h1 class="contentHeader1" id="playlists" > Our Full Songbook</h1>
+      <p>We enjoy playing a large range of rock and pop music spanning the decades. While we love playing well known rock anthems from a wide variety of bands, we also enjoy playing slightly obscure personal favourites to make ourselves stand out a bit from the rest of the crowd.</p>
+
+      <p>Check out our songbook and playlist set from Spotify below to see what we can currently play. It's a list that'll grow over time and we're more than happy to add to it with suggestions from yourselves if you'd like us to play at your party or venue. </p>
+
+         <iframe src="https://open.spotify.com/embed/user/sweeters/playlist/0RiAuBTNBOiu7GjvaJdfbi" width="600" height="680" frameborder="0" allowtransparency="true" class="spotifyPlaylist"></iframe>
+
+         <h2>An example of a set list for a wedding party</h2>
+         <iframe class="spotifyPlaylist" src="https://open.spotify.com/embed/user/sweeters/playlist/275kxLigeztIdIZz5EUnoV" align-content="center" width="600" height="680" frameborder="0" allowtransparency="true" padding-right="5%"></iframe>
+           <div class="anchorButtonContentRight"><a href="#media">See and Hear Us in Action</a></div>
+
+    </div>
+
+<div class="imageLeftFirst">
+    <div id="menuLeft"><div id="navlinkleft">
+      <a href="#aboutUs" class="anchorButtonLeft" margin-top="20%"> About Us </a><br>
+      <a href="#playlists" class="anchorButtonLeft"> Playlists </a><br>
+      <a href="#media" class="anchorButtonLeft"> Media </a><br>
+      <a href="#contactUs" class="anchorButtonLeft"> Contact </a></br>
+      <a href="https://www.facebook.com/pg/Debrief-1498334906920330/events/?ref=page_internal" class="anchorButtonLeft"> Upcoming Shows </a>
+    </div>
+    </div>
+  </div>
+
+</div>
+<!--END OF PLYLIST SECTION --->
+
+<!--2nd Image break between content --->
+    <img src="images/image2.jpg" class="imageBreak">
+
+<!-- START OF MEDIA SECTION --->
+
+
+<div id="contentWrapper">
+    <div id="contentLeft">
+         <h1 class="contentHeader1" id="media">Our Videos</h1>
+         <h2 class="contentHeader2">No One Knows - Live at the Guidhall, Gloucester</h2>
+         <iframe class="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/Z16czGPCo3k" frameborder="0" allowfullscreen></iframe>
+         <h2 class="contentHeader2">Hard to Handle - Live at the Guidhall, Gloucester.</h2>
+         <iframe class="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/631awBZmdow" frameborder="0" allowfullscreen></iframe>
+
+         <h2 class="contentHeader2">Gallery</h2>
+    <!--- START OF IMAGE GALLERY CONTENT -->
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/image1.jpg">
+          <img src="images/image1.jpg" alt="Frank and Alex in the Studio" width="300" height="200">
+        </a>
+      </div>
+    </div>
+
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/image2.jpg">
+          <img src="images/image2.jpg" alt="Sexy Lights!" width="600" height="400">
+        </a>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/image3.jpg">
+          <img src="images/image3.jpg" alt="Frank and Alex in the studio" width="600" height="400">
+        </a>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+
+<div class="anchorButtonContentLeft"><a href="#contactUs">Contact Us</a></div>
+
+</div>
+
+
+<div class="imageLeftFirst">
+    <div id="menuRight"><div id="navlinkleft">
+      <a href="#aboutUs" class="anchorButtonLeft" margin-top="20%"> About Us </a><br>
+      <a href="#playlists" class="anchorButtonLeft"> Playlists </a><br>
+      <a href="#media" class="anchorButtonLeft"> Media </a><br>
+      <a href="#contactUs" class="anchorButtonLeft"> Contact </a></br>
+      <a href="https://www.facebook.com/pg/Debrief-1498334906920330/events/?ref=page_internal" class="anchorButtonLeft"> Upcoming Shows </a>
+    </div>
+    </div>
+  </div>
+
+  <!--- END OF IMAGE GALLERY CONTENT -->
+
+  <!--1st Image break between content --->
+      <img src="images/image5.jpg" class="imageBreak">
+  <!--2nd Image break between content --->
+
+  <!-- START OF CONTACT US SECTION --->
+  <div id="contentWrapper">
+      <div id="contentRight">
+               <h1 class="contentHeader1" id="contactUs"> CONTACT US</h1>
+        <p>Want to hear and see more of us? So do we! Fill in the form below if you wish to book us for your venue, party, live music night or any social function and we'll be in touch.</p>
+<iframe class="contactUsForm" src="https://docs.google.com/forms/d/e/1FAIpQLSf6eVOzkHQ-kLS8S3iA_2jiWvVl_0vp6BNEKOGBrf2Qi5s3aw/viewform?embedded=true">Loading...</iframe>
+      </div>
+
+  <div class="imageLeftFirst">
+      <div id="menuLeft"><div id="navlinkleft">
+        <a href="#aboutUs" class="anchorButtonLeft" margin-top="20%"> About Us </a><br>
+        <a href="#playlists" class="anchorButtonLeft"> Playlists </a><br>
+        <a href="#media" class="anchorButtonLeft"> Media </a><br>
+        <a href="#contactUs" class="anchorButtonLeft"> Contact </a></br>
+        <a href="https://www.facebook.com/pg/Debrief-1498334906920330/events/?ref=page_internal" class="anchorButtonLeft"> Upcoming Shows </a>
+      </div>
+      </div>
+    </div>
+
+  </div>
+  <!--END OF CONTACT US --->
+</div> <!--END OF WRAPPER FOR DUAL LAYOUT -->
+<div id="footer">
+<p>&copy; 2018 - DRP Productions </p>
+<a href="https://www.facebook.com/pg/Debrief-1498334906920330/events/?ref=page_internal" class="anchorButtonLeft"> Upcoming Shows </a>
+
+
 </body>
+
 <script src="debrief.js"></script>
 </html>

@@ -1,57 +1,17 @@
+html {
+  height: 100%
+}
+
 body {
     display: block;
     margin: auto;
 }
 
-/* The side navigation menu */
-.sidenav {
-   height: 100%; /* 100% Full-height */
-   width: 0; /* 0 width - change this with JavaScript */
-   position: fixed; /* Stay in place */
-   z-index: 1; /* Stay on top */
-   top: 0;
-   left: 0;
-   background-color: #111; /* Black*/
-   overflow-x: hidden; /* Disable horizontal scroll */
-   padding-top: 60px; /* Place content 60px from the top */
-   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+a {
+  color:inherit;
 }
 
-/* The navigation menu links */
-.sidenav a {
-   padding: 8px 8px 8px 32px;
-   text-decoration: none;
-   font-size: 25px;
-   color: #818181;
-   display: block;
-   transition: 0.3s
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .offcanvas a:focus{
-   color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-   position: absolute;
-   top: 0;
-   right: 25px;
-   font-size: 36px;
-   margin-left: 50px;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-   transition: margin-left .5s;
-   /*padding: 20px;*/
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-   .sidenav {padding-top: 15px;}
-   .sidenav a {font-size: 18px;}
-}
+/*START OF STYLING FOR VIDEO AND LOGO OPENING SECTION */
 
 #video-background {
   position: fixed;
@@ -62,20 +22,8 @@ min-height: 100%;
 width: auto;
 height: auto;
 z-index: -100;
-
 }
 
-.fullscreen-bg {
-    position: fixed ;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: none;
-    z-index: -100;
-}
-
-/*Animated logo on page load*/
 #mainLogo {
   width: 80%;
   display: block;
@@ -88,32 +36,166 @@ z-index: -100;
   z-index:-1;
 }
 
+#strapline {
+    color: #ffffff;
+    animation: fadeIn 10s;
+    animation-timing-function: ease-in;
+    z-index:-1;
+    text-align: center;
+    font-family: 'Open Sans', monospace;
+    font-size: 3vw;
+  }
+
+#abouUsButton {
+    color:#ffffff;
+    border-width: 2px;
+    border-style: solid;
+    font-family: 'Open Sans', monospace;
+    text-align:center;
+    display: block;
+    font-size:2em;
+    transition-duration: 0.4s;
+    cursor:pointer;
+    border-radius:5px;
+    padding: 15px;
+    margin-top: 2%;
+    margin-bottom: 80%;
+    width:15%;
+    position: relative;
+    z-index:1;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fadeIn 10s;
+    animation-timing-function: ease-in;
+  }
+
 
 /*Keyframes animation that I originally wrote*/
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1;}
 }
+/*END OF STYLING FOR VIDEO AND LOGO OPENING SECTION */
 
-.straplineBox {
-  display: flex;
-  flex-direction:column;
-  align-self: center;
-  width:100%;
-  opacity: 1;
-  z-index: 2;
-  margin-top: 2%;
-  flex: 1 1 auto;
 
-}
-#strapline {
-  color: #ffffff;
-  animation: fadeIn 10s;
-  animation-timing-function: ease-in;
-  z-index:-1;
+
+#contentWrapper { /*THIS IS WHAT CREATES THE DUAL PAGE LAYOUT FOR CONTENT AND MENU*/
+    width: auto;
+    overflow: visible; /* add this to contain floated children */
+        font-family: 'Open Sans', monospace;
 }
 
-.anchorButton a {
+/* STYLE FOR CONTENT LEFT - MENU RIGHT */
+#contentLeft {
+  height: 974px;
+    width: 60%;
+    float:left; /* add this */
+    overflow: scroll;
+    color: white;
+    background-color: #1b1e27;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    direction:rtl;
+}
+
+#contentLeft p, h2 {
+  color: white;
+  background-color: #1b1e27;
+  padding-left: 2%;
+  padding-right:5%;
+  direction: ltr;
+}
+
+#contentLeft ul h2 {
+  color: white;
+  background-color: #1b1e27;
+  padding-left: 1%;
+  direction: ltr;
+
+}
+
+/*Added in to defeat user agent stylesheet.*/
+#contentLeft h1 {
+  direction:ltr;
+  margin-top:2%;
+  padding-left: 2%;
+  text-align: center;
+}
+
+#menuRight {
+  width:40%;
+  height: 974px;
+    float: left; /* add this */
+    background-image:url("images/image1.jpg");
+
+    background-attachment: fixed;
+    transition: .5s ease;
+    background-size: cover;
+    background-position-x: 450px;
+    background-position-y: bottom;
+    line-height:30px;
+
+}
+
+/* STYLE FOR CONTENT RIGHT - MENU LEFT */
+
+#contentRight {
+  height: 974px;
+    width: 60%;
+    float:right; /* add this */
+    overflow: scroll;
+    color: white;
+    background-color: #1b1e27;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    direction:ltr;
+}
+
+#contentRight p, h2 {
+  color: white;
+  background-color: #1b1e27;
+  padding-left: 2%;
+  padding-right:5%;
+  direction: ltr;
+}
+
+#contentRight ul h2 {
+  color: white;
+  background-color: #1b1e27;
+  padding-left: 1%;
+  direction: ltr;
+  text-align: center;
+
+}
+
+/*Added in to defeat user agent stylesheet.*/
+#contentRight h1 {
+  direction:ltr;
+  margin-top:2%;
+  padding-left: 2%;
+  text-align: center;
+}
+
+#menuLeft {
+  width:40%;
+  height: 974px;
+    float: left; /* add this */
+    background-image:url("images/image1.jpg");
+
+    background-attachment: fixed;
+    transition: .5s ease;
+    background-size: cover;
+    background-position-y: bottom;
+    line-height:30px;
+}
+
+/*OTHER STUFF */
+
+#navlinkleft{
+  margin-top: 35%;
+}
+
+.anchorButtonLeft {
   color:#ffffff;
   border-width: 2px;
   border-style: solid;
@@ -126,139 +208,178 @@ z-index: -100;
   border-radius:5px;
   padding: 15px;
   margin-top: 5%;
-  width:15%;
+  width:50%;
   position: relative;
-  z-index:1;
+  z-index:10;
   left: 50%;
   transform: translateX(-50%);
-  animation: fadeIn 10s;
-  animation-timing-function: ease-in;
+  opacity: 0.4;
+  transition: .5s ease;
+  filter:blur(5px);
 }
 
-.mainContent {
-  display: flex;
-  flex-direction:column;
-  align-self: center;
-  background-color: #211d2d;
-  width:100%;
+.imageLeftFirst:hover .anchorButtonLeft {
   opacity: 1;
-  z-index: 2;
-  margin-top: 80%;
-  flex: 1 1 auto;
-  /*height:1000px;*/
+  transition: .5s ease;
+  z-index: 10;
+  filter:none;
+
 }
 
-.contentPane {
-    width: 60%;
+.imageLeft:hover .anchorButtonLeft {
+  opacity: 1;
+  transition: .5s ease;
+  z-index: 10;
+  filter:none;
+
+}
+
+.anchorButtonLeft:hover {
+background-color: #1e1c11;
+color: grey;
+}
+
+.anchorButtonContentLeft a {
+  color:#ffffff;
+  border-style: solid;
+  font-family: 'Open Sans', monospace;
+  text-align:center;
+  display: block;
+  font-size:2em;
+  transition-duration: 0.4s;
+  cursor:pointer;
+  border-radius:5px;
+  padding: 15px;
+  width:15%;
+  z-index:5;
+  margin-bottom: 2%;
+  margin-right: 40%;
+}
+
+.anchorButtonContentRight a {
+  color:#ffffff;
+  border-style: solid;
+  font-family: 'Open Sans', monospace;
+  text-align:center;
+  display: block;
+  font-size:2em;
+  transition-duration: 0.4s;
+  cursor:pointer;
+  border-radius:5px;
+  padding: 25px;
+  width:45%;
+  z-index:5;
+  margin-bottom: 2%;
+  margin-left: 25%;
+}
+
+.imageBreak {
+  max-width:100%;
+  height:auto;
+  z-index: 2;
+  display:block;
+}
+
+.spotifyPlaylist {
+  margin-left: 20%;
+  overflow: visible;
+}
+
+.youtubeVideo {
+  padding-right: 30%;
+}
+
+/*START OF image Gallery Content from W3 Schools*/
+
+div.gallery {
+    border: 1px solid #ccc;
+    margin-left: 30%;
+    margin-top: 10px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
     height: auto;
-    flex-wrap:wrap;
-    border-width: thin;
-    border-style: dotted;
-    border-color: white;
-    border-radius: 5px;
-    align-self: center;
-    margin-top: 20px;
-    background-color: #e0e0e0;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    box-shadow: 10px 10px 5px #888888;
-  }
+}
 
-  .aboutUs {
-    text-align: left;
-    margin-left: 9%;
-    margin-right:9%;
-    z-index:2;
-  }
-
-  .aboutUs li h2{
-    text-align: left;
-  }
-
-  .anchorButton1 a {
-    color:#ffffff;
-    border-width: 2px;
-    border-style: solid;
-    font-family: 'Open Sans', monospace;
-    text-align:center;
-    display: block;
-    font-size:2em;
-    transition-duration: 0.4s;
-    cursor:pointer;
-
-    border-radius:5px;
+div.desc {
     padding: 15px;
-    width:15%;
-    position: relative;
-    z-index:5;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 2%;
+    text-align: center;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom:2%;
+}
+
+/*END OF image Gallery Content from W3 Schools*/
+
+/*START OF SOCIAL MEDIA ICONS FOR MENU*/
+.socialMedia {
+  border: 1px solid #ccc;
+  margin-left:20px;
+  margin-top: 8%;
+
+}
+
+
+.imageLeftFirst:hover .socialMediaBreak {
+  transition: .5s ease;
+  color: white;
+  text-shadow: 0 0 0.2em #FFF;
+
   }
 
-  .imageBreak {
-    max-width:100%;
-    height:auto;
-    display:block;
-    z-index: 2;
+
+  .socialMediaBreak {
+    font-size: 50px;
+    color: darkgray;
+    margin-top: 4%;
+    margin-left: 30px;
   }
 
-  .playlist {
-  /*  display: flex;
-    flex-direction:row;
-    align-content: center;
-    background-color: #1b1e27;
-    width:100%;
-    opacity: 1;
-    z-index: inherit;
-    flex: 1 1 auto; ORIGINAL CONTENT*/
-    display: flex;
-    flex-direction:column;
-    align-self: center;
-    background-color: #1b1e27;
-    width:100%;
-    opacity: 1;
-    z-index: 2;
-    flex: 1 1 auto;
+.contactUsForm {
+  height: 130%;
+  width: 90%;
+  margin-left:5%;
+  margin-right:5%;
+}
 
-  }
+/*END OF SOCIAL MEDIA ICONS FOR MENU*/
 
-  .contentHeader1 {
-    display:flex;
-    color:#2c2d23;
-    font-family: 'Open Sans', monospace;
-    margin:auto;
-    justify-content: center;
-  }
-
-.contentHeader2 {
-    display:flex;
-    color:#2c2d23;
-    font-family: 'Open Sans', monospace;
-    margin:auto;
-    justify-content: center;
-  }
-
-  .contentText {
-  color:#2c2d23;
-  font-family: 'Open Sans', monospace;
-  font-size:18px;
+#footer {
+  max-width:100%;
+  height:auto;
   z-index: 2;
-  }
-
-  p {
-  color:#2c2d23;
+  display:block;
+  background-color: black;
   font-family: 'Open Sans', monospace;
-  font-size:18px;
-  z-index: 2;
-  }
+  color: white;
+  padding-bottom: 2%;
 
-  #bandBio {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    padding:1%;
-    align-items: flex-start;
-    margin-bottom: 2%;
-    line-height: 1.8;
-  }
+}
