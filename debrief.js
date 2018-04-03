@@ -38,3 +38,15 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+//Testing animating code on onclick
+$("#button").click(function() {
+  $('.transform').toggleClass('transform-active');
+});
+
+//experimental for new website
+$(function() {
+  $("#bt").click(function() {
+    $(".box").toggleClass("box-change");
+  });
+});
